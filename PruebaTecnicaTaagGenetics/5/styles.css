@@ -1,0 +1,36 @@
+table {
+  border: 1px solid black;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tr:nth-child(5n) {
+  border-bottom: 2px solid black;
+}
+
+th:first-child {
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 100px;
+}
+
+td:nth-child(3) {
+  font-style: italic;
+}
+
+td:last-child {
+  width: 80px;
+}

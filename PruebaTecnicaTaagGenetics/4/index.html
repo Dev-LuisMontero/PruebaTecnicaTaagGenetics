@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>    
+  <style>
+    /* Establece la transición */
+    .menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+    .menu a {
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 0px 10px;
+    }
+    .menu i {
+      transition: all 0.3s;
+      font-size: 24px;
+    }
+    /* Estilos para el icono activo */
+    .menu i.active {
+      color: blue;
+      transform: rotate(180deg) scale(1.5);
+    }
+  </style>
+  
+  <div class="menu">
+    <a href="#"><i class="fa fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-search"></i> Search</a>
+    <a href="#"><i class="fa fa-envelope"></i> Contact</a>
+    <a href="#"><i class="fa fa-cog"></i> Settings</a>
+  </div>
+  
+  <script>
+    var menuItems = document.querySelectorAll('.menu a i');
+    var currentActiveItem = null;
+  
+  function changeIcon(event) {
+    if (currentActiveItem) {
+      currentActiveItem.classList.remove('active');
+    }
+    currentActiveItem = event.target;
+    currentActiveItem.classList.add('active');
+  }
+
+  menuItems.forEach(function(menuItem) {
+    menuItem.addEventListener('click', changeIcon);
+  });
+  </script>
+</body>

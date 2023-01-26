@@ -1,0 +1,59 @@
+body {
+    background-color: white;
+}
+  
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+  
+.card1 {
+    background-color: #7a77f6;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+.card2 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+.card-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* para centrar el contenido */
+    align-items: center; /* para centrar el contenido */
+}
+  
+.form-column {
+    flex: 2; /* para que cada columna ocupe el mismo espacio */
+    margin: 0 10px; /* para dar un margen entre las columnas */
+}
+  
+/* estilo para los elementos del formulario */
+.form-control {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  
+/* estilo para el botón de enviar */
+.form-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
